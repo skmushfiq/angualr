@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost\SQLEXPRESS:58588
+    driver: com.microsoft.sqlserver.jdbc.SQLServerDriver;databaseName=FieldForceDb
+    username: sa
+    password: mister
+
+    hikari:
+      maximum-pool-size: 10

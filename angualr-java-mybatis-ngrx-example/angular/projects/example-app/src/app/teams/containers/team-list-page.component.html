@@ -1,0 +1,40 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Teams  <button><a [routerLink]="['./addNew']">Add New</a></button> </h4> 
+                <p class="card-category">View All your Teams</p>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="">
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Team Name
+                            </th>
+                            <th>
+                                Members
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let team of teams$ |async">
+                                <td>
+                                    {{team.id}}
+                                </td>
+                                <td>
+                                    {{team.teamName}}
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
